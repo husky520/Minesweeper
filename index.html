@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>扫雷</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- 弹出式菜单开始 -->
+    <div class="menu hide">
+        <!-- 标题开始 -->
+        <div class="header">
+            <h1>扫雷 <span class="small">Minesweeper</span></h1>
+        </div>
+        <!-- 标题结束 -->
+
+        <!-- 菜单开始 -->
+        <div class="content">
+            <div class="level btn easy active">低级 9&times;9</div>
+            <div class="level btn normal">初级 16&times;16</div>
+            <div class="level btn hard">正常 16&times;30</div>
+        </div>
+        <!-- 菜单结束 -->
+
+        <!-- 开始游戏开始 -->
+        <div class="content">
+            <div class="btn start">开始游戏</div>
+        </div>
+        <!-- 开始游戏结束 -->
+    </div>
+    <!-- 弹出式菜单结束 -->
+    
+
+
+    <!-- 游戏界面开始 -->
+    <div class="game">
+        <!-- 标题栏 -->
+        <div class="game-header">
+            <div class="tittle">扫雷 Minesweeper</div>
+            <form>
+                <label>
+                    <input type="radio" value="zz" name="level" checked="checked">
+                    <span>智障难度</span>
+                </label>
+                <label>
+                    <input type="radio" value="easy" name="level">
+                    <span>没有难度</span>
+                </label>
+                <label>
+                    <input type="radio" value="normal" name="level">
+                    <span>入门难度</span>
+                </label>
+                <label>
+                    <input type="radio" value="hard" name="level">
+                    <span>默认难度</span>
+                </label>
+            </form>
+            <div class="game-menu">菜单</div>
+        </div>
+
+        <!-- 主界面 -->
+        <div class="game-content">
+            
+        </div>
+
+        <!-- 信息栏 -->
+        <div class="game-footer">
+            <input class="time" type="text" value=0>
+            <!-- <div class="time">s</div> -->
+            <input class="bomb" type="text" value=10>
+            <!-- <div class="bomb">10</div> -->
+        </div>
+    </div>
+    <!-- 游戏界面结束 -->
+
+
+
+
+
+    <script src="js/index.js"></script>
+</body>
+</html>
